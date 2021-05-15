@@ -21,25 +21,14 @@
     </nav>
 
     <script>
-        var folder = "assets/";
-
-        $.ajax({
-            url: folder,
-            success: function (data) {
-                $(data).find("a").attr("href", function (i, val) {
-                    if (val.match(/\.(jpe?g|png|MOV)$/)) {
-                        $("body").append("<img src='" + folder + val + "'>");
-                    }
-                });
-            }
-        });
+        var videoHtml = ""
+        for(i = 1; i <= 24; i++) {
+            videoHtml += '<video width="320" height="240" controls><source src="assets/' + i + '.MOV" type="video/mp4">Your browser does not support the video tag.</video>'
+        }
+        document.getElementById("videos").innerHTML = "Paragraph changed!";
     </script>
 
-
-    <video width="320" height="240" controls>
-        <source src="assets/2d2879f75572a838b2f5173f927ff61d.MOV" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div id="videos"></div>
 
 </body>
 
