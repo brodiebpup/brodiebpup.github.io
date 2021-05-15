@@ -6,3 +6,10 @@
 body {
     background: yellow;
 }
+
+@media screen and (max-device-width: 640px){
+    .videos {
+        width: 40%;
+        padding: 5%;
+    }
+}
