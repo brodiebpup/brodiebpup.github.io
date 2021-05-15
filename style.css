@@ -7,6 +7,10 @@ body {
     background: yellow;
 }
 
+.navbar {
+    justify-content: center;
+}
+
 @media screen and (max-device-width: 800px){
     .videos {
         width: 50%;
