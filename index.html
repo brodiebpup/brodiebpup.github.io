@@ -21,12 +21,12 @@
         </div>
     </nav>
 
-    <video id="videos" controls></video>
+    <div id="videos" controls></div>
 
     <script>
         var videoHtml = ""
         for(i = 1; i <= 24; i++) {
-            videoHtml += '<source src="assets/' + i + '.MOV" type="video/mp4">Your browser does not support the video tag.'
+            videoHtml += '<video class="videos" controls><source src="assets/' + i + '.MOV" type="video/mp4">Your browser does not support the video tag.</video>'
         }
         document.getElementById("videos").innerHTML = videoHtml;
     </script>
