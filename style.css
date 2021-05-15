@@ -7,7 +7,7 @@ body {
     background: yellow;
 }
 
-@media screen and (max-device-width: 640px){
+@media screen and (max-device-width: 800px){
     .videos {
         width: 50%;
         padding: 5%;
